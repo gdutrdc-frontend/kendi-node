@@ -1,0 +1,16 @@
+.pages-home {
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+.pages-home_content {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transform: translate(0, 0);
+     -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}

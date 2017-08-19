@@ -1,0 +1,22 @@
+.component-button {
+  background-color: #13bbfa;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+
+.component-button:active {
+  background-color: #05b6f8;
+}
+
+.component-button.disabled {
+  background-color: #e4e4e4;
+  color: #aaa;
+}

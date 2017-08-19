@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <link rel="shortcut icon" href="/static/image/favicon.png">
+    <title>home</title>
+    <script type="text/javascript">
+        var t0 = Date.now();
+        window._timePoints = [t0];
+    </script>
+
+</head>
+  <body>
+    
+  <div id="root"></div>
+
+    <script type="text/javascript">window._timePoints[1] = Date.now();</script>
+<script src="/src/views/lib/zepto/zepto.js"></script>
+  <script type="text/javascript">
+    $.ajax({
+      url: '/api/postSomething',
+      type: 'POST',
+      contentType: false,
+      data: JSON.stringify({ test: 'zicong' }),
+      success: function(data) {
+        console.log('post /api/postSomething:', data);
+      },
+    })
+
+    $.ajax({
+      url: '/api/getSomething',
+      type: 'GET',
+      data: { test: 'zicong' },
+      success: function(data) {
+        console.log('get /api/getSomething:', data);
+      },
+    })
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.pages-home-tab:before, .pages-home-tab:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.pages-home-tab {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 15px;
+  color: #333;
+}
+
+.pages-home-tab li {
+  display: inline-block;
+  padding: 10px 0;
+  width: 25%;
+  float: left;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+
+.pages-home-tab li.active {
+  border-color: #13bbfa;
+  color: #13bbfa;
+  background-color: #fff !important;
+}
+
+.pages-home-tab li:hover {
+  background-color: rgba(204, 204, 204, 0.2);
+}

@@ -1,0 +1,35 @@
+.component-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  overflow: hidden;
+  background-color: #13bbfa;
+  text-align: center;
+}
+
+.component-header_title {
+  display: inline-block;
+  margin: 0;
+  height: 55px;
+  line-height: 55px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.component-header .icon-goback {
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+  display: inline-block;
+  height: 0;
+  width: 20px;
+  padding-top: 55px;
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-background-size: 20px, 55px !important;
+          background-size: 20px, 55px !important;
+  background: url("/static/image/icon-goback.png") transparent no-repeat center center;
+}
